@@ -1,0 +1,240 @@
+Simulator report for hw2
+Tue Dec 08 09:50:11 2020
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 72 nodes     ;
+; Simulation Coverage         ;      98.72 % ;
+; Total Number of Transitions ; 920          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      98.72 % ;
+; Total nodes checked                                 ; 72           ;
+; Total output ports checked                          ; 78           ;
+; Total output ports with complete 1/0-value coverage ; 77           ;
+; Total output ports with no 1/0-value coverage       ; 1            ;
+; Total output ports with no 1-value coverage         ; 1            ;
+; Total output ports with no 0-value coverage         ; 1            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                            ;
++------------------------------------------------------------------+------------------------------------------------------------------+------------------+
+; Node Name                                                        ; Output Port Name                                                 ; Output Port Type ;
++------------------------------------------------------------------+------------------------------------------------------------------+------------------+
+; |hw2|Add0~1                                                      ; |hw2|Add0~1                                                      ; sumout           ;
+; |hw2|Add0~1                                                      ; |hw2|Add0~2                                                      ; cout             ;
+; |hw2|Add0~5                                                      ; |hw2|Add0~5                                                      ; sumout           ;
+; |hw2|Add0~5                                                      ; |hw2|Add0~6                                                      ; cout             ;
+; |hw2|Add0~9                                                      ; |hw2|Add0~9                                                      ; sumout           ;
+; |hw2|Add0~9                                                      ; |hw2|Add0~10                                                     ; cout             ;
+; |hw2|Add0~13                                                     ; |hw2|Add0~13                                                     ; sumout           ;
+; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~1              ; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~1              ; sumout           ;
+; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~5              ; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~5              ; sumout           ;
+; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~5              ; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~6              ; cout             ;
+; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~1              ; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~1              ; sumout           ;
+; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~1              ; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~2              ; cout             ;
+; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~9              ; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~9              ; sumout           ;
+; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~5              ; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_1~5              ; sumout           ;
+; |hw2|tmp_A[0]                                                    ; |hw2|tmp_A[0]                                                    ; regout           ;
+; |hw2|tmp_A[1]                                                    ; |hw2|tmp_A[1]                                                    ; regout           ;
+; |hw2|tmp_A[2]                                                    ; |hw2|tmp_A[2]                                                    ; regout           ;
+; |hw2|tmp_A[3]                                                    ; |hw2|tmp_A[3]                                                    ; regout           ;
+; |hw2|tmp_B[0]                                                    ; |hw2|tmp_B[0]                                                    ; regout           ;
+; |hw2|tmp_B[1]                                                    ; |hw2|tmp_B[1]                                                    ; regout           ;
+; |hw2|tmp_B[2]                                                    ; |hw2|tmp_B[2]                                                    ; regout           ;
+; |hw2|tmp_B[3]                                                    ; |hw2|tmp_B[3]                                                    ; regout           ;
+; |hw2|tmp_C[0]                                                    ; |hw2|tmp_C[0]                                                    ; regout           ;
+; |hw2|tmp_C[1]                                                    ; |hw2|tmp_C[1]                                                    ; regout           ;
+; |hw2|tmp_C[2]                                                    ; |hw2|tmp_C[2]                                                    ; regout           ;
+; |hw2|tmp_C[3]                                                    ; |hw2|tmp_C[3]                                                    ; regout           ;
+; |hw2|LessThan0~0                                                 ; |hw2|LessThan0~0                                                 ; combout          ;
+; |hw2|LessThan0~1                                                 ; |hw2|LessThan0~1                                                 ; combout          ;
+; |hw2|LessThan2~0                                                 ; |hw2|LessThan2~0                                                 ; combout          ;
+; |hw2|LessThan2~1                                                 ; |hw2|LessThan2~1                                                 ; combout          ;
+; |hw2|Mux4~0                                                      ; |hw2|Mux4~0                                                      ; combout          ;
+; |hw2|Mux4~1                                                      ; |hw2|Mux4~1                                                      ; combout          ;
+; |hw2|Mux4~2                                                      ; |hw2|Mux4~2                                                      ; combout          ;
+; |hw2|Mux4~3                                                      ; |hw2|Mux4~3                                                      ; combout          ;
+; |hw2|Mux4~4                                                      ; |hw2|Mux4~4                                                      ; combout          ;
+; |hw2|Mux4~5                                                      ; |hw2|Mux4~5                                                      ; combout          ;
+; |hw2|Mux3~0                                                      ; |hw2|Mux3~0                                                      ; combout          ;
+; |hw2|Mux3~1                                                      ; |hw2|Mux3~1                                                      ; combout          ;
+; |hw2|Mux2~0                                                      ; |hw2|Mux2~0                                                      ; combout          ;
+; |hw2|Mux2~1                                                      ; |hw2|Mux2~1                                                      ; combout          ;
+; |hw2|Mux1~0                                                      ; |hw2|Mux1~0                                                      ; combout          ;
+; |hw2|Mux1~1                                                      ; |hw2|Mux1~1                                                      ; combout          ;
+; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|w_decoder_node9w[0] ; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|w_decoder_node9w[0] ; combout          ;
+; |hw2|Mux6~0                                                      ; |hw2|Mux6~0                                                      ; combout          ;
+; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|w_decoder_node9w[1] ; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|w_decoder_node9w[1] ; combout          ;
+; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|w_decoder_node9w[8] ; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|w_decoder_node9w[8] ; combout          ;
+; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~0              ; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_4~0              ; combout          ;
+; |hw2|X[0]                                                        ; |hw2|X[0]                                                        ; combout          ;
+; |hw2|X[1]                                                        ; |hw2|X[1]                                                        ; combout          ;
+; |hw2|X[2]                                                        ; |hw2|X[2]                                                        ; combout          ;
+; |hw2|X[3]                                                        ; |hw2|X[3]                                                        ; combout          ;
+; |hw2|A[0]                                                        ; |hw2|A[0]                                                        ; padio            ;
+; |hw2|A[1]                                                        ; |hw2|A[1]                                                        ; padio            ;
+; |hw2|A[2]                                                        ; |hw2|A[2]                                                        ; padio            ;
+; |hw2|A[3]                                                        ; |hw2|A[3]                                                        ; padio            ;
+; |hw2|B[0]                                                        ; |hw2|B[0]                                                        ; padio            ;
+; |hw2|B[1]                                                        ; |hw2|B[1]                                                        ; padio            ;
+; |hw2|B[2]                                                        ; |hw2|B[2]                                                        ; padio            ;
+; |hw2|B[3]                                                        ; |hw2|B[3]                                                        ; padio            ;
+; |hw2|C[0]                                                        ; |hw2|C[0]                                                        ; padio            ;
+; |hw2|C[1]                                                        ; |hw2|C[1]                                                        ; padio            ;
+; |hw2|C[2]                                                        ; |hw2|C[2]                                                        ; padio            ;
+; |hw2|C[3]                                                        ; |hw2|C[3]                                                        ; padio            ;
+; |hw2|Y[0]                                                        ; |hw2|Y[0]                                                        ; padio            ;
+; |hw2|Y[1]                                                        ; |hw2|Y[1]                                                        ; padio            ;
+; |hw2|Y[2]                                                        ; |hw2|Y[2]                                                        ; padio            ;
+; |hw2|Y[3]                                                        ; |hw2|Y[3]                                                        ; padio            ;
+; |hw2|S[0]                                                        ; |hw2|S[0]~corein                                                 ; combout          ;
+; |hw2|S[1]                                                        ; |hw2|S[1]~corein                                                 ; combout          ;
+; |hw2|D_in[0]                                                     ; |hw2|D_in[0]~corein                                              ; combout          ;
+; |hw2|clk                                                         ; |hw2|clk~corein                                                  ; combout          ;
+; |hw2|enable                                                      ; |hw2|enable~corein                                               ; combout          ;
+; |hw2|D_in[1]                                                     ; |hw2|D_in[1]~corein                                              ; combout          ;
+; |hw2|D_in[2]                                                     ; |hw2|D_in[2]~corein                                              ; combout          ;
+; |hw2|D_in[3]                                                     ; |hw2|D_in[3]~corein                                              ; combout          ;
+; |hw2|clk~clkctrl                                                 ; |hw2|clk~clkctrl                                                 ; outclk           ;
+; |hw2|Mux6~0clkctrl                                               ; |hw2|Mux6~0clkctrl                                               ; outclk           ;
++------------------------------------------------------------------+------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                     ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; Node Name                                           ; Output Port Name                                    ; Output Port Type ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~1 ; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~2 ; cout             ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                     ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; Node Name                                           ; Output Port Name                                    ; Output Port Type ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~1 ; |hw2|lpm_mult:Mult0|mult_nr01:auto_generated|op_3~2 ; cout             ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Dec 08 09:50:10 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off hw2 -c hw2
+Info: Using vector source file "D:/1-4-3-大五上/電腦輔助VLSI設計/hw2/hw2.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      98.72 %
+Info: Number of transitions in simulation is 920
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 167 megabytes
+    Info: Processing ended: Tue Dec 08 09:50:11 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
